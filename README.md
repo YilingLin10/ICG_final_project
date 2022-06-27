@@ -25,7 +25,7 @@ pip3 install opencv-python==4.1.2.30
 2. Compute distance vectors
     *  Delaunay triangulation
         *  https://github.com/efviodo/dlib-face-recognition-delaunay-triangulation
-    *  normalized by the square root of the face area (臉部面積的平方根)
+    *  normalized by the square root of the face area
 > ```collect_input.py```: collect training data
 * 'landmarks'
 * 'distances': the distance vector
