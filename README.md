@@ -2,6 +2,7 @@
 tags: ICG
 ---
 # Final Project
+This is a reproduction of the paper [Data-driven enhancement of facial attractiveness](https://dl.acm.org/doi/pdf/10.1145/1399504.1360637)
 ## Environment
 * python 3.8
 * dlib 19.18.0
