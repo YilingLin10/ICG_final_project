@@ -15,14 +15,8 @@ python -m pip install  https://files.pythonhosted.org/packages/1e/62/aacb236d21f
 pip3 install opencv-python==4.1.2.30  
 ```
 ## Dataset
-* https://github.com/HCIILAB/SCUT-FBP5500-Database-Release
-* https://github.com/faresbougourzi/CNN-ER_for_FBP
-* AR Database: (已寄email詢問)
-    * http://www2.ece.ohio-state.edu/~aleix/ARdatabase.html
-* FEI Face Database ＋ 人工評分
+* FEI Face Database
     * https://fei.edu.br/~cet/facedatabase.html
-* CVI (需寄信)
-    * http://lrv.fri.uni-lj.si/facedb.html
 ## Feature Extraction
 1. Detect facial landmarks
     * dlib: https://www.studytonight.com/post/dlib-68-points-face-landmark-detection-with-opencv-and-python
@@ -73,31 +67,11 @@ Let ***vi***, and ***bi*** denote the set of distance vectors corresponding to t
             * ‘lm’ : Levenberg-Marquardt algorithm as implemented in MINPACK. Doesn’t handle bounds and sparse Jacobians. Usually the most efficient method for small unconstrained problems.
             * https://pythonmana.com/2020/12/20201210164251696e.html
 
-* 試試另一種方法：https://github.com/ddemidov/mba
-
 
 ### Warping
 * tfa.sparse_image_warp
-https://qiita.com/Nahuel/items/022bd7445939fa4cca7b
-![](https://i.imgur.com/5h8Bc3a.jpg)
 
-* https://github.com/spmallick/learnopencv/blob/master/FaceMorph/faceMorph.py
-* https://learnopencv.com/face-morph-using-opencv-cpp-python/#id1540306373
-
-https://www.csie.ntu.edu.tw/~cyy/courses/vfx/05spring/lectures/scribe/03scribe.pdf
-
-* Thin-Plate Spline (Report)
-https://khanhha.github.io/posts/Thin-Plate-Splines-Warping/#warp-image-using-estimated-f_x-and-f_y
------------------
-補齊左右對稱：
-[0, 36],[35, 46],[21, 39], 
-
-把眼睛的多加幾個
-瞳孔大小[37,41],[38,40],[37,38],[40,41],[43,47],[44,46],[43,44],[46,47],
-眼距[40,42],
-眼長[36,39],[42,45]
-
-### 178個邊：
+### Results：
 * 13
 ![](https://i.imgur.com/2ECLyjX.jpg)
 * 20
@@ -107,7 +81,6 @@ https://khanhha.github.io/posts/Thin-Plate-Splines-Warping/#warp-image-using-est
 ![](https://i.imgur.com/XIQoKKw.jpg)
 * 32
 ![](https://i.imgur.com/eY5hSOF.jpg)
-
 * 37
 ![](https://i.imgur.com/ToYkcm9.jpg)
 * 47
@@ -115,26 +88,3 @@ https://khanhha.github.io/posts/Thin-Plate-Splines-Warping/#warp-image-using-est
 * 52
 ![](https://i.imgur.com/6YTq9Fu.jpg)
 
-### 共同的邊 - 成功的example:
-* 13
-![](https://i.imgur.com/nj5gwsz.jpg)
-
-* 30
-![](https://i.imgur.com/d9TMK10.jpg)
-
-* 33
-![](https://i.imgur.com/0D8pdFo.jpg)
-
-* 37
-![](https://i.imgur.com/l8t786K.jpg)
-
-
-* 190
-![](https://i.imgur.com/vV8ShJK.jpg)
-
-* 196
-![](https://i.imgur.com/nLvMGbE.jpg)
-
-
-### Report 參考
-https://github.com/sayhitosandy/Image_Deformation/blob/master/Final%20Submission/ProjectEvaluation_final_group10_Report.pdf
